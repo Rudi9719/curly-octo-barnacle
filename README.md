@@ -1,5 +1,5 @@
 # TrinityCore - Rudi Style 
-Please see Wiki
+Please see Wiki and ignore all 6.x info.
 
 Below is a modified Readme from TrinityCore
 
