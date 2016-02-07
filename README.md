@@ -1,5 +1,7 @@
 # TrinityCore - Rudi Style 
 Please see Wiki and ignore all 6.x info.
+ The Xcodeproj file is because I am working on a Mac, and compiling on a Debian 8 machine. My changes are only tested on Debian 8.
+
 
 Below is a modified Readme from TrinityCore
 
