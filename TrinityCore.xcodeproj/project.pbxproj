@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F32B86291C672036006B355D /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		F372B65B1C4E9BB900F4412C /* TrinityCore */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TrinityCore; sourceTree = BUILT_PRODUCTS_DIR; };
 		F372B6651C4E9BEC00F4412C /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
 		F372B6661C4E9BEC00F4412C /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		F372B6521C4E9BB900F4412C = {
 			isa = PBXGroup;
 			children = (
+				F32B86291C672036006B355D /* build.sh */,
 				F372B65D1C4E9BB900F4412C /* TrinityCore */,
 				F372B65C1C4E9BB900F4412C /* Products */,
 			);
@@ -263,6 +265,7 @@
 				F372B6641C4E9BB900F4412C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
