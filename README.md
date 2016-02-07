@@ -87,3 +87,4 @@ Read file [THANKS](THANKS)
 [Documentation](http://www.trinitycore.net) (powered by Doxygen)
 
 [Forums](http://www.trinitycore.org/f/)
+test
