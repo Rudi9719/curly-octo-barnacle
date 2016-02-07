@@ -1,1 +1,2 @@
-# curly-octo-barnacle
+# TrinityCore - Rudi Style 
+Please see Wiki
