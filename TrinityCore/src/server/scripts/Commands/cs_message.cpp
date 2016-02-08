@@ -129,12 +129,15 @@ public:
     static bool HandleAnnounceCommand(ChatHandler* handler, char const* args)
     {
         if (!*args)
-            return false;
-
-        char buff[2048];
-        sprintf(buff, handler->GetTrinityString(LANG_SYSTEMMESSAGE), args);
-        sWorld->SendServerMessage(SERVER_MSG_STRING, buff);
+        return false;
+        
+        std::string name("Console");
+        if (WorldSession* session = handler->GetSession())
+        name = session->GetPlayer()->GetName();
+        
+        sWorld->SendWorldText(LANG_ANNOUNCE_COLOR, name.c_str(), args);
         return true;
+
     }
     // announce to logged in GMs
     static bool HandleGMAnnounceCommand(ChatHandler* /*handler*/, char const* args)
