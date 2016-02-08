@@ -49,6 +49,7 @@ public:
             { "channel",        rbac::RBAC_PERM_COMMAND_CHANNEL,        true, NULL,                         "", channelCommandTable  },
             { "nameannounce",   rbac::RBAC_PERM_COMMAND_NAMEANNOUNCE,   true, &HandleNameAnnounceCommand,   "" },
             { "gmnameannounce", rbac::RBAC_PERM_COMMAND_GMNAMEANNOUNCE, true, &HandleGMNameAnnounceCommand, "" },
+            { "ga",             rbac::RBAC_PERM_COMMAND_GMNAMEANNOUNCE, true, &HandleGMNameAnnounceCommand, "" },
             { "announce",       rbac::RBAC_PERM_COMMAND_ANNOUNCE,       true, &HandleNameAnnounceCommand,   "" },
             { "a",              rbac::RBAC_PERM_COMMAND_ANNOUNCE,       true, &HandleNameAnnounceCommand,   "" },
             { "gmannounce",     rbac::RBAC_PERM_COMMAND_GMANNOUNCE,     true, &HandleGMAnnounceCommand,     "" },
