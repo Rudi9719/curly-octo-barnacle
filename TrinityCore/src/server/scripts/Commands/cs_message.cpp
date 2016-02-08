@@ -109,7 +109,7 @@ public:
         std::string name("Console");
         if (WorldSession* session = handler->GetSession())
             name = session->GetPlayer()->GetName();
-
+        // sendToSlack()
         sWorld->SendWorldText(LANG_ANNOUNCE_COLOR, name.c_str(), args);
         return true;
     }
