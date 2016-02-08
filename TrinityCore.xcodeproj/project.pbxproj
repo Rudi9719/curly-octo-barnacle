@@ -23,6 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F31F9B601C683B71008C47F8 /* Testing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Testing; sourceTree = "<group>"; };
+		F31F9B611C683B7A008C47F8 /* SQL Changes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SQL Changes"; sourceTree = "<group>"; };
 		F32B86291C672036006B355D /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		F372B65B1C4E9BB900F4412C /* TrinityCore */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TrinityCore; sourceTree = BUILT_PRODUCTS_DIR; };
 		F372B6651C4E9BEC00F4412C /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				F32B86291C672036006B355D /* build.sh */,
+				F31F9B611C683B7A008C47F8 /* SQL Changes */,
+				F31F9B601C683B71008C47F8 /* Testing */,
 				F372B65D1C4E9BB900F4412C /* TrinityCore */,
 				F372B65C1C4E9BB900F4412C /* Products */,
 			);
