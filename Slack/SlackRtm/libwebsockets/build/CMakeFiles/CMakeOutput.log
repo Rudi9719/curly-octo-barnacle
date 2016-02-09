@@ -1,0 +1,746 @@
+The system is: Darwin - 15.2.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is AppleClang, found in "/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/3.4.1/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_6f5e0/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_6f5e0.dir/build.make CMakeFiles/cmTC_6f5e0.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6f5e0.dir/testCCompiler.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_6f5e0.dir/testCCompiler.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_6f5e0
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f5e0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6f5e0.dir/testCCompiler.c.o  -o cmTC_6f5e0  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_28cde/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_28cde.dir/build.make CMakeFiles/cmTC_28cde.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28cde.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_28cde.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_28cde
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28cde.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_28cde.dir/CMakeCCompilerABI.c.o  -o cmTC_28cde   
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -o cmTC_28cde -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_28cde.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-253.9
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/opt/local/bin/gmake" "cmTC_28cde/fast"]
+  ignore line: [gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp']
+  ignore line: [/opt/local/bin/gmake -f CMakeFiles/cmTC_28cde.dir/build.make CMakeFiles/cmTC_28cde.dir/build]
+  ignore line: [gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_28cde.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_28cde.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_28cde]
+  ignore line: [/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28cde.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_28cde.dir/CMakeCCompilerABI.c.o  -o cmTC_28cde   ]
+  ignore line: [Apple LLVM version 7.0.2 (clang-700.1.81)]
+  ignore line: [Target: x86_64-apple-darwin15.2.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -o cmTC_28cde -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_28cde.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.11.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_28cde] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_28cde.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_27536/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_27536.dir/build.make CMakeFiles/cmTC_27536.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27536.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_27536.dir/feature_tests.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_27536
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27536.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_27536.dir/feature_tests.c.o  -o cmTC_27536  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_acb30/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_acb30.dir/build.make CMakeFiles/cmTC_acb30.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_acb30.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_acb30.dir/feature_tests.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_acb30
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_acb30.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_acb30.dir/feature_tests.c.o  -o cmTC_acb30  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_c8419/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_c8419.dir/build.make CMakeFiles/cmTC_c8419.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8419.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_c8419.dir/feature_tests.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c8419
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8419.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c8419.dir/feature_tests.c.o  -o cmTC_c8419  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Performing C SOURCE FILE Test HAVE_inline succeded with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_822b0/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_822b0.dir/build.make CMakeFiles/cmTC_822b0.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_822b0.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=inline  -DHAVE_inline   -o CMakeFiles/cmTC_822b0.dir/src.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_822b0
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_822b0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DHAVE_inline -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_822b0.dir/src.c.o  -o cmTC_822b0  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		static KEYWORD void a() {}
+		int main(int argc, char **argv) { a(); return 0; }
+		
+Performing C SOURCE FILE Test HAVE___inline__ succeded with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_9a7d4/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_9a7d4.dir/build.make CMakeFiles/cmTC_9a7d4.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a7d4.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline__  -DHAVE___inline__   -o CMakeFiles/cmTC_9a7d4.dir/src.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9a7d4
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a7d4.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DHAVE___inline__ -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9a7d4.dir/src.c.o  -o cmTC_9a7d4  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		static KEYWORD void a() {}
+		int main(int argc, char **argv) { a(); return 0; }
+		
+Performing C SOURCE FILE Test HAVE___inline succeded with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_794be/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_794be.dir/build.make CMakeFiles/cmTC_794be.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_794be.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DHAVE___inline   -o CMakeFiles/cmTC_794be.dir/src.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_794be
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_794be.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DHAVE___inline -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_794be.dir/src.c.o  -o cmTC_794be  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		static KEYWORD void a() {}
+		int main(int argc, char **argv) { a(); return 0; }
+		
+Determining if the function bzero exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_657b9/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_657b9.dir/build.make CMakeFiles/cmTC_657b9.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_657b9.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=bzero   -o CMakeFiles/cmTC_657b9.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: warning: incompatible redeclaration of library function 'bzero' [-Wincompatible-library-redeclaration]
+char CHECK_FUNCTION_EXISTS();
+     ^
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS bzero
+                              ^
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: note: 'bzero' is a builtin with type 'void (void *, unsigned long)'
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS bzero
+                              ^
+1 warning generated.
+Linking C executable cmTC_657b9
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_657b9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=bzero -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_657b9.dir/CheckFunctionExists.c.o  -o cmTC_657b9  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function fork exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_ba09f/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_ba09f.dir/build.make CMakeFiles/cmTC_ba09f.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba09f.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=fork   -o CMakeFiles/cmTC_ba09f.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ba09f
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba09f.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fork -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ba09f.dir/CheckFunctionExists.c.o  -o cmTC_ba09f  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getenv exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_10a72/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_10a72.dir/build.make CMakeFiles/cmTC_10a72.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10a72.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=getenv   -o CMakeFiles/cmTC_10a72.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_10a72
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10a72.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getenv -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_10a72.dir/CheckFunctionExists.c.o  -o cmTC_10a72  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function malloc exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_c53be/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_c53be.dir/build.make CMakeFiles/cmTC_c53be.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c53be.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=malloc   -o CMakeFiles/cmTC_c53be.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: warning: incompatible redeclaration of library function 'malloc' [-Wincompatible-library-redeclaration]
+char CHECK_FUNCTION_EXISTS();
+     ^
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS malloc
+                              ^
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: note: 'malloc' is a builtin with type 'void *(unsigned long)'
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS malloc
+                              ^
+1 warning generated.
+Linking C executable cmTC_c53be
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c53be.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=malloc -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c53be.dir/CheckFunctionExists.c.o  -o cmTC_c53be  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_dea4a/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_dea4a.dir/build.make CMakeFiles/cmTC_dea4a.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dea4a.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=memset   -o CMakeFiles/cmTC_dea4a.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: warning: incompatible redeclaration of library function 'memset' [-Wincompatible-library-redeclaration]
+char CHECK_FUNCTION_EXISTS();
+     ^
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS memset
+                              ^
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: note: 'memset' is a builtin with type 'void *(void *, int, unsigned long)'
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS memset
+                              ^
+1 warning generated.
+Linking C executable cmTC_dea4a
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dea4a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memset -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_dea4a.dir/CheckFunctionExists.c.o  -o cmTC_dea4a  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function realloc exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_4797c/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_4797c.dir/build.make CMakeFiles/cmTC_4797c.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4797c.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=realloc   -o CMakeFiles/cmTC_4797c.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: warning: incompatible redeclaration of library function 'realloc' [-Wincompatible-library-redeclaration]
+char CHECK_FUNCTION_EXISTS();
+     ^
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS realloc
+                              ^
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: note: 'realloc' is a builtin with type 'void *(void *, unsigned long)'
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS realloc
+                              ^
+1 warning generated.
+Linking C executable cmTC_4797c
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4797c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=realloc -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4797c.dir/CheckFunctionExists.c.o  -o cmTC_4797c  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function socket exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_2d8d8/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_2d8d8.dir/build.make CMakeFiles/cmTC_2d8d8.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d8d8.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=socket   -o CMakeFiles/cmTC_2d8d8.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2d8d8
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d8d8.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=socket -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_2d8d8.dir/CheckFunctionExists.c.o  -o cmTC_2d8d8  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strerror exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_ef70d/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_ef70d.dir/build.make CMakeFiles/cmTC_ef70d.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef70d.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=strerror   -o CMakeFiles/cmTC_ef70d.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: warning: incompatible redeclaration of library function 'strerror' [-Wincompatible-library-redeclaration]
+char CHECK_FUNCTION_EXISTS();
+     ^
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strerror
+                              ^
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: note: 'strerror' is a builtin with type 'char *(int)'
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strerror
+                              ^
+1 warning generated.
+Linking C executable cmTC_ef70d
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef70d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strerror -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ef70d.dir/CheckFunctionExists.c.o  -o cmTC_ef70d  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function vfork exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_960dc/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_960dc.dir/build.make CMakeFiles/cmTC_960dc.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_960dc.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=vfork   -o CMakeFiles/cmTC_960dc.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: warning: incompatible redeclaration of library function 'vfork' [-Wincompatible-library-redeclaration]
+char CHECK_FUNCTION_EXISTS();
+     ^
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS vfork
+                              ^
+/usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c:6:6: note: 'vfork' is a builtin with type 'int (void)'
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS vfork
+                              ^
+1 warning generated.
+Linking C executable cmTC_960dc
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_960dc.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vfork -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_960dc.dir/CheckFunctionExists.c.o  -o cmTC_960dc  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getifaddrs exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_a8273/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_a8273.dir/build.make CMakeFiles/cmTC_a8273.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8273.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline  -DCHECK_FUNCTION_EXISTS=getifaddrs   -o CMakeFiles/cmTC_a8273.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.4.1/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a8273
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8273.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getifaddrs -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a8273.dir/CheckFunctionExists.c.o  -o cmTC_a8273  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_8952d/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_8952d.dir/build.make CMakeFiles/cmTC_8952d.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8952d.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_8952d.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8952d
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8952d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8952d.dir/CheckIncludeFile.c.o  -o cmTC_8952d  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_b3fff/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_b3fff.dir/build.make CMakeFiles/cmTC_b3fff.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b3fff.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_b3fff.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b3fff
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3fff.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b3fff.dir/CheckIncludeFile.c.o  -o cmTC_b3fff  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_dae53/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_dae53.dir/build.make CMakeFiles/cmTC_dae53.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dae53.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_dae53.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_dae53
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dae53.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_dae53.dir/CheckIncludeFile.c.o  -o cmTC_dae53  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_3ad36/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_3ad36.dir/build.make CMakeFiles/cmTC_3ad36.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ad36.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_3ad36.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3ad36
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ad36.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_3ad36.dir/CheckIncludeFile.c.o  -o cmTC_3ad36  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file netinet/in.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_2b38a/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_2b38a.dir/build.make CMakeFiles/cmTC_2b38a.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2b38a.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_2b38a.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2b38a
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b38a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_2b38a.dir/CheckIncludeFile.c.o  -o cmTC_2b38a  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_99d6b/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_99d6b.dir/build.make CMakeFiles/cmTC_99d6b.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99d6b.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_99d6b.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_99d6b
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99d6b.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_99d6b.dir/CheckIncludeFile.c.o  -o cmTC_99d6b  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_fdbcc/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_fdbcc.dir/build.make CMakeFiles/cmTC_fdbcc.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fdbcc.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_fdbcc.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fdbcc
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdbcc.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_fdbcc.dir/CheckIncludeFile.c.o  -o cmTC_fdbcc  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_25f54/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_25f54.dir/build.make CMakeFiles/cmTC_25f54.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25f54.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_25f54.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_25f54
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25f54.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_25f54.dir/CheckIncludeFile.c.o  -o cmTC_25f54  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_72921/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_72921.dir/build.make CMakeFiles/cmTC_72921.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72921.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_72921.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_72921
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72921.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_72921.dir/CheckIncludeFile.c.o  -o cmTC_72921  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/socket.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_6e7c0/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_6e7c0.dir/build.make CMakeFiles/cmTC_6e7c0.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6e7c0.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_6e7c0.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6e7c0
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e7c0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6e7c0.dir/CheckIncludeFile.c.o  -o cmTC_6e7c0  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_336c6/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_336c6.dir/build.make CMakeFiles/cmTC_336c6.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_336c6.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_336c6.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_336c6
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_336c6.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_336c6.dir/CheckIncludeFile.c.o  -o cmTC_336c6  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_1d949/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_1d949.dir/build.make CMakeFiles/cmTC_1d949.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d949.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_1d949.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1d949
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d949.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1d949.dir/CheckIncludeFile.c.o  -o cmTC_1d949  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_22fe9/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_22fe9.dir/build.make CMakeFiles/cmTC_22fe9.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22fe9.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_22fe9.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_22fe9
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22fe9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_22fe9.dir/CheckIncludeFile.c.o  -o cmTC_22fe9  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file zlib.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_e1e9d/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_e1e9d.dir/build.make CMakeFiles/cmTC_e1e9d.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1e9d.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_e1e9d.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e1e9d
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1e9d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e1e9d.dir/CheckIncludeFile.c.o  -o cmTC_e1e9d  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdlib.h;stdarg.h;string.h;float.h exist passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_4dde7/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_4dde7.dir/build.make CMakeFiles/cmTC_4dde7.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4dde7.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_4dde7.dir/CheckIncludeFiles.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_4dde7
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4dde7.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4dde7.dir/CheckIncludeFiles.c.o  -o cmTC_4dde7  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_1a734/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_1a734.dir/build.make CMakeFiles/cmTC_1a734.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a734.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_1a734.dir/CheckIncludeFile.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1a734
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a734.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1a734.dir/CheckIncludeFile.c.o  -o cmTC_1a734  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of pid_t passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_1caad/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_1caad.dir/build.make CMakeFiles/cmTC_1caad.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1caad.dir/PID_T_SIZE.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_1caad.dir/PID_T_SIZE.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CheckTypeSize/PID_T_SIZE.c
+Linking C executable cmTC_1caad
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1caad.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1caad.dir/PID_T_SIZE.c.o  -o cmTC_1caad  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTC_e0778/fast"
+gmake[1]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/gmake -f CMakeFiles/cmTC_e0778.dir/build.make CMakeFiles/cmTC_e0778.dir/build
+gmake[2]: Entering directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e0778.dir/SIZE_T_SIZE.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DKEYWORD=__inline   -o CMakeFiles/cmTC_e0778.dir/SIZE_T_SIZE.c.o   -c /Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CheckTypeSize/SIZE_T_SIZE.c
+Linking C executable cmTC_e0778
+/usr/local/Cellar/cmake/3.4.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0778.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e0778.dir/SIZE_T_SIZE.c.o  -o cmTC_e0778  
+gmake[2]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/CMakeTmp'
+
+
