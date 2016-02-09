@@ -1,3 +1,5 @@
+Created by [daniel1111](https://github.com/daniel1111)
+
 SlackRtm
 ========
 
