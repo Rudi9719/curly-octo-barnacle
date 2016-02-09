@@ -43,14 +43,14 @@ $(LIB_DIR)libslackrtm.a: $(LIB_DIR)slackrtm.a libwebsockets/build/lib/libwebsock
 
 examples: $(LIB_DIR)libslackrtm.a
 	cd examples/minimal ; $(MAKE)
-	cd examples/mqtt ; $(MAKE)
+
 
 install: examples
-	cp examples/mqtt/SlackMqtt $(DESTDIR)/usr/bin
+	cp examples/minimal/minimal $(DESTDIR)/usr/bin
 
 clean:
 	rm -f build/*.o
 	rm -f SlackRtmTest
 	rm -f lib/*.a
 	cd examples/minimal ; $(MAKE) clean
-	cd examples/mqtt ; $(MAKE) clean
+	
