@@ -1,4 +1,5 @@
 Created by [daniel1111](https://github.com/daniel1111)
+Mosquitto module/slackmqtt example removed.
 
 SlackRtm
 ========
