@@ -28,6 +28,7 @@ EndScriptData */
 #include "Language.h"
 #include "Player.h"
 #include "ObjectMgr.h"
+#include "SlackHandler.h"
 
 class message_commandscript : public CommandScript
 {
@@ -110,7 +111,7 @@ public:
         std::string name("Console");
         if (WorldSession* session = handler->GetSession())
             name = session->GetPlayer()->GetName();
-        // sendToSlack()
+        sendToSlack(name.c_str(), args);
         sWorld->SendWorldText(LANG_ANNOUNCE_COLOR, name.c_str(), args);
         return true;
     }
@@ -125,6 +126,7 @@ public:
             name = session->GetPlayer()->GetName();
 
         sWorld->SendGMText(LANG_GM_ANNOUNCE_COLOR, name.c_str(), args);
+        
         return true;
     }
     // global announce
