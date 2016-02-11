@@ -6,7 +6,7 @@
 //  Copyright © 2016 STEiN-Net. All rights reserved.
 //
 
-#include <string>
+#include <std::string>
 #include <iostream>
 #include "include/CSlackRTM.h"
 class SlackTest : public SlackRTMCallbackInterface
@@ -16,17 +16,17 @@ private:
     
 public:
     
-    SlackTest(string token, string apiurl);
+    SlackTest(std::string token, std::string apiurl);
     
     ~SlackTest();
     
     void start();
     
-    void sendToGame(string username, string message);
+    void sendToGame(std::string username, std::string message);
     
     void sendToSlack(char const* name, char const* message);
     
-    int cbi_got_slack_message(string channel, string username, string message);
+    int cbi_got_slack_message(std::string channel, std::string username, std::string message);
     
-    void cbi_debug_message(int log_level, string msg);
+    void cbi_debug_message(int log_level, std::string msg);
 };
