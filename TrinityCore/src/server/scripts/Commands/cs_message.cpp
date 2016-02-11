@@ -116,7 +116,7 @@ public:
         std::string apiurl = "http://api.stein13.net/status";
          SlackTest test(token, apiurl);
         
-        Slackobj::sendToSlack(name.c_str(), args);
+        test::sendToSlack(name.c_str(), args);
         sWorld->SendWorldText(LANG_ANNOUNCE_COLOR, name.c_str(), args);
         return true;
     }
