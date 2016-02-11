@@ -37,7 +37,7 @@ void start()
     sleep(1000);
 }
 
-int cbi_got_slack_message(string channel, string username, string message)
+int cbi_got_slack_message(std::string channel, std::string username, std::string message)
 {
     cbi_debug_message(LOG_DEBUG, "cbi_got_slack_message> #" + channel + "/<" + username + "> " + message);
     
@@ -45,7 +45,7 @@ int cbi_got_slack_message(string channel, string username, string message)
     
     return 0;
 }
-void sendToGame(string username, string message) {
+void sendToGame(std::string username, std::string message) {
     sWorld->SendWorldText(LANG_ANNOUNCE_COLOR, username, message);
 }
 void sendToSlack(char const* name, char const* message) {
@@ -53,7 +53,7 @@ void sendToSlack(char const* name, char const* message) {
     
 }
 
-void cbi_debug_message(int log_level, string msg)
+void cbi_debug_message(int log_level, std::string msg)
 {
     cout << "[" + msg + "]" << endl;
 }
@@ -61,7 +61,7 @@ void cbi_debug_message(int log_level, string msg)
 
 int main(int argc, char *argv[])
 {
-    string apiurl = "https://slack.com/api/";
+    std::string apiurl = "https://slack.com/api/";
     
     if (argc != 2)
     {
@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
         return -1;
     }
     
-    string token(argv[1]);
+    std::string token(argv[1]);
     
     SlackTest test(token, apiurl);
     test.start();
