@@ -112,7 +112,7 @@ public:
         if (WorldSession* session = handler->GetSession())
             name = session->GetPlayer()->GetName();
         
-        Slackobj = new SlackTest;
+        SlackTest Slackobj = new SlackTest;
         
         Slackobj::sendToSlack(name.c_str(), args);
         sWorld->SendWorldText(LANG_ANNOUNCE_COLOR, name.c_str(), args);
