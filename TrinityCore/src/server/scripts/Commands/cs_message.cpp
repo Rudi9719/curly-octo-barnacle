@@ -28,7 +28,7 @@ EndScriptData */
 #include "Language.h"
 #include "Player.h"
 #include "ObjectMgr.h"
-#include "SlackHandler.h"
+#include "../Custom/SlackHandler.h"
 
 class message_commandscript : public CommandScript
 {
