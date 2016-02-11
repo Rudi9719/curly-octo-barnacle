@@ -6,7 +6,7 @@
 //  Copyright © 2016 STEiN-Net. All rights reserved.
 //
 
-#include <std::string>
+#include <string>
 #include <iostream>
 #include "include/CSlackRTM.h"
 class SlackTest : public SlackRTMCallbackInterface
