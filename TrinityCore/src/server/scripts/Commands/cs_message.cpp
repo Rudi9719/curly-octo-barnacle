@@ -111,7 +111,10 @@ public:
         std::string name("Console");
         if (WorldSession* session = handler->GetSession())
             name = session->GetPlayer()->GetName();
-        SlackTest::sendToSlack(name.c_str(), args);
+        
+        Slackobj = new SlackTest;
+        
+        Slackobj::sendToSlack(name.c_str(), args);
         sWorld->SendWorldText(LANG_ANNOUNCE_COLOR, name.c_str(), args);
         return true;
     }
