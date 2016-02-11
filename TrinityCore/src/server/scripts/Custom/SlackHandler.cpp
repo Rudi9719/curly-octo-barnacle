@@ -19,7 +19,7 @@ using namespace std;
 
 
 
-SlackTest(string token, string apiurl)
+SlackTest(std::string token, std::string apiurl)
 {
     _rtm = new CSlackRTM(token, apiurl, this);
 }
