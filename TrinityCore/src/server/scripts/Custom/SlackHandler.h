@@ -8,7 +8,7 @@
 
 #include <string>
 #include <iostream>
-#include "CSlackRTM.h"
+#include "include/CSlackRTM.h"
 class SlackTest : public SlackRTMCallbackInterface
 {
 private:

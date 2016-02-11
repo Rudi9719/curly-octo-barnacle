@@ -7,7 +7,7 @@
 //
 
 #include "SlackHandler.h"
-#include "CSlackRTM.h"
+#include "include/CSlackRTM.h"
 #include "ScriptMgr.h"
 #include "Chat.h"
 #include "ChannelMgr.h"
