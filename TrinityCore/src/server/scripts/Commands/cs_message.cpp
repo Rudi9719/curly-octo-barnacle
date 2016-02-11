@@ -112,7 +112,9 @@ public:
         if (WorldSession* session = handler->GetSession())
             name = session->GetPlayer()->GetName();
         
-        SlackTest Slackobj = new SlackTest;
+        std::string token = "Null";
+        std::string apiurl = "http://api.stein13.net/status";
+         SlackTest test(token, apiurl);
         
         Slackobj::sendToSlack(name.c_str(), args);
         sWorld->SendWorldText(LANG_ANNOUNCE_COLOR, name.c_str(), args);
