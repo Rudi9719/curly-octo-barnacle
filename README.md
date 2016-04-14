@@ -88,3 +88,4 @@ Read file [THANKS](THANKS)
 
 [Forums](http://www.trinitycore.org/f/)
 test
+Jenkins now works?
