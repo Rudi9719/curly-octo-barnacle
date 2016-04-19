@@ -1,8 +1,11 @@
 import os
 import time
 import re
+import subprocess
 from slackclient.slackclient import SlackClient
 
+
+world = subprocess.Popen(["/wow/test/bin/worldserver"], stdin=PIPE)
 token = "" #Slack token
 #sc = SlackClient(token)
 test_message = "Command: .a Hello There!! This is my message :] [Player: Rudi (GUID Full: 0x0000000000000001 Type: Player Low: 1) (Account: 1) X: 1887.870483 Y: -4423.166504 Z: 12.811410 Map: 1 (Kalimdor) Area: 1637 (Orgrimmar) Zone: Unknown Selected:  (GUID Full: 0x0000000000000000 Type: None Low: 0)]"
@@ -19,26 +22,35 @@ def message_strip(message):
 
 def start_auth():
     os.system("/wow/test/bin/authserver & disown")
-    
-
-def start_word():
     pass
 
 def slack_to_world(message, user):
-    pass
+    post = user + ": " + message
+    data, error = world.communicate("a " + post)
+    listen_to_world()
 
 def world_to_slack(output):
     message = message_strip(output)
-# sc.rtm_send_message(["#wowserver", message])
+    if (len(message) >  10)
+        sc.rtm_send_message(["#wowserver", message])
+    else
+        pass
 
 
 def listen_to_world():
-    pass
+    data, error = world.communicate()
+    world_to_slack(data)
+
 
 
 
 def main():
     world_to_slack(test_message)
+    if world
+        listen_to_world()
+    else
+        world = subprocess.Popen(["/wow/test/bin/worldserver"], stdin=PIPE)
+
 
 
 if __name__ == '__main__':
