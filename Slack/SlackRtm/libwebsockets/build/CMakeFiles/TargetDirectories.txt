@@ -1,9 +1,0 @@
-/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/test-ping.dir
-/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/test-fraggle.dir
-/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/dist.dir
-/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/test-client.dir
-/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/test-server-extpoll.dir
-/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/test-server.dir
-/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/test-echo.dir
-/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/websockets_shared.dir
-/Volumes/CONNECT/Projects/TrinityCore/Testing/SlackRtm/libwebsockets/build/CMakeFiles/websockets.dir
