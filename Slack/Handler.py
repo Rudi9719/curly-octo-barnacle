@@ -18,8 +18,8 @@ def message_strip(message):
     return player.group(1) + ": " + command.group(1)
 
 def start_auth():
-    os.system("/wow/")
-    pass
+    os.system("/wow/test/bin/authserver & disown")
+    
 
 def start_word():
     pass
