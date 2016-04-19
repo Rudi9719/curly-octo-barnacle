@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F372B6751C4EA43600F4412C /* cmake in Sources */ = {isa = PBXBuildFile; fileRef = F372B6651C4E9BEC00F4412C /* cmake */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F372B6591C4E9BB900F4412C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F31F9B601C683B71008C47F8 /* Testing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Testing; sourceTree = "<group>"; };
+		F31F9B611C683B7A008C47F8 /* SQL Changes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SQL Changes"; sourceTree = "<group>"; };
+		F32B86291C672036006B355D /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		F372B65B1C4E9BB900F4412C /* TrinityCore */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TrinityCore; sourceTree = BUILT_PRODUCTS_DIR; };
+		F372B6651C4E9BEC00F4412C /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
+		F372B6661C4E9BEC00F4412C /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		F372B6671C4E9BEC00F4412C /* contrib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = contrib; sourceTree = "<group>"; };
+		F372B6681C4E9BEC00F4412C /* CONTRIBUTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		F372B6691C4E9BEC00F4412C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		F372B66A1C4E9BEC00F4412C /* dep */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dep; sourceTree = "<group>"; };
+		F372B66B1C4E9BEC00F4412C /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		F372B66C1C4E9BEC00F4412C /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		F372B66D1C4E9BEC00F4412C /* PreLoad.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PreLoad.cmake; sourceTree = "<group>"; };
+		F372B66E1C4E9BEC00F4412C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F372B66F1C4E9BEC00F4412C /* revision_data.h.in.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = revision_data.h.in.cmake; sourceTree = "<group>"; };
+		F372B6701C4E9BEC00F4412C /* sql */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sql; sourceTree = "<group>"; };
+		F372B6711C4E9BEC00F4412C /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		F372B6721C4E9BEC00F4412C /* THANKS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = THANKS; sourceTree = "<group>"; };
+		F39C59661CC693C3009F1090 /* Handler.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = Handler.py; path = TrinityCore/Slack/Handler.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F372B6581C4E9BB900F4412C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F372B6521C4E9BB900F4412C = {
+			isa = PBXGroup;
+			children = (
+				F39C59661CC693C3009F1090 /* Handler.py */,
+				F32B86291C672036006B355D /* build.sh */,
+				F31F9B611C683B7A008C47F8 /* SQL Changes */,
+				F31F9B601C683B71008C47F8 /* Testing */,
+				F372B65D1C4E9BB900F4412C /* TrinityCore */,
+				F372B65C1C4E9BB900F4412C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F372B65C1C4E9BB900F4412C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F372B65B1C4E9BB900F4412C /* TrinityCore */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F372B65D1C4E9BB900F4412C /* TrinityCore */ = {
+			isa = PBXGroup;
+			children = (
+				F372B6651C4E9BEC00F4412C /* cmake */,
+				F372B6661C4E9BEC00F4412C /* CMakeLists.txt */,
+				F372B6671C4E9BEC00F4412C /* contrib */,
+				F372B6681C4E9BEC00F4412C /* CONTRIBUTING.md */,
+				F372B6691C4E9BEC00F4412C /* COPYING */,
+				F372B66A1C4E9BEC00F4412C /* dep */,
+				F372B66B1C4E9BEC00F4412C /* doc */,
+				F372B66C1C4E9BEC00F4412C /* INSTALL */,
+				F372B66D1C4E9BEC00F4412C /* PreLoad.cmake */,
+				F372B66E1C4E9BEC00F4412C /* README.md */,
+				F372B66F1C4E9BEC00F4412C /* revision_data.h.in.cmake */,
+				F372B6701C4E9BEC00F4412C /* sql */,
+				F372B6711C4E9BEC00F4412C /* src */,
+				F372B6721C4E9BEC00F4412C /* THANKS */,
+			);
+			path = TrinityCore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F372B65A1C4E9BB900F4412C /* TrinityCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F372B6621C4E9BB900F4412C /* Build configuration list for PBXNativeTarget "TrinityCore" */;
+			buildPhases = (
+				F372B6571C4E9BB900F4412C /* Sources */,
+				F372B6581C4E9BB900F4412C /* Frameworks */,
+				F372B6591C4E9BB900F4412C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrinityCore;
+			productName = TrinityCore;
+			productReference = F372B65B1C4E9BB900F4412C /* TrinityCore */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F372B6531C4E9BB900F4412C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "STEiN-Net";
+				TargetAttributes = {
+					F372B65A1C4E9BB900F4412C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F372B6561C4E9BB900F4412C /* Build configuration list for PBXProject "TrinityCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F372B6521C4E9BB900F4412C;
+			productRefGroup = F372B65C1C4E9BB900F4412C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F372B65A1C4E9BB900F4412C /* TrinityCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F372B6571C4E9BB900F4412C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F372B6751C4EA43600F4412C /* cmake in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F372B6601C4E9BB900F4412C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F372B6611C4E9BB900F4412C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F372B6631C4E9BB900F4412C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F372B6641C4E9BB900F4412C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F372B6561C4E9BB900F4412C /* Build configuration list for PBXProject "TrinityCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F372B6601C4E9BB900F4412C /* Debug */,
+				F372B6611C4E9BB900F4412C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F372B6621C4E9BB900F4412C /* Build configuration list for PBXNativeTarget "TrinityCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F372B6631C4E9BB900F4412C /* Debug */,
+				F372B6641C4E9BB900F4412C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F372B6531C4E9BB900F4412C /* Project object */;
+}
