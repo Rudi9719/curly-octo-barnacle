@@ -2,7 +2,7 @@ import os
 import time
 import re
 import subprocess
-from slackclient.slackclient import SlackClient
+from slackclient import SlackClient
 
 
 world = subprocess.Popen(["/wow/test/bin/worldserver"], stdin=PIPE)
