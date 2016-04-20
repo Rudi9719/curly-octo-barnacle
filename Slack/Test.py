@@ -29,11 +29,8 @@ def main():
 
 def message_strip(message):
     command = message
-    player = message
     command = re.search('Command: .a (.*) \[Player',  command)
-    # regex: 'Player: ([a-zA-Z]+)' $1
-    player = re.search('Player: ([a-zA-Z]+)' , player)
-    if player:
+    if command:
         return command.group(1)
     else:
         return "no"
@@ -62,7 +59,7 @@ def slack_to_world(message):
 def world_to_slack(output):
     message = message_strip(output)
     player = re.search('Player: ([a-zA-Z]+)' , output)
-    if (len(message) > 10):
+    if (len(message) > 0):
         sc.api_call(
                     "chat.postMessage", channel="#wowserver", text=message,
                     username=player.group(1), icon_emoji=':robot_face:'
