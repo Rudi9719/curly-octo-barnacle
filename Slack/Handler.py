@@ -38,7 +38,7 @@ def start_auth():
 
 def slack_to_world(message, user):
     post = user + ": " + message
-    data, error = world.stdin.write("a " + post)
+    data = world.stdin.write("a " + post)
     listen_to_world()
 
 def world_to_slack(output):
@@ -55,7 +55,7 @@ def world_to_slack(output):
 def listen_to_world():
     hello_world("Listening to world.")
     while True:
-        data, error = world.stdout.read()[0]
+        data = world.stdout.read()[0]
         print(data)
         world_to_slack(data)
         slack_to_world(sc.rtm_read())
