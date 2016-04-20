@@ -5,6 +5,8 @@ import sys
 from subprocess import Popen, PIPE
 from slackclient import SlackClient
 import pexpect
+import json
+
 
 token = "xoxb-10856414337-QWUGUYP12hXrKzGLUe74VeSg" #Slack token
 sc = SlackClient(token)
@@ -43,7 +45,7 @@ def start_auth():
 def slack_to_world(message):
     post = message
     #post = user + ": " + message
-    data = world.sendline("a ".join(post))
+    data = world.sendline("a " + json.dumps(post))
     listen_to_world()
 
 def world_to_slack(output):
