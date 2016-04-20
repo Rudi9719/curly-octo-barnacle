@@ -44,7 +44,6 @@ def listen_to_world():
         data, error = world.communicate()[0]
         print(data)
         world_to_slack(data)
-    if sc.rtm_connect():
         print sc.rtm_read()
         time.sleep(1)
 
@@ -55,14 +54,14 @@ def listen_to_world():
 def main():
     sc.rtm_connect()
     start_auth()
-    
-    if world:
-        world_to_slack(test_message)
-        print("World was opened previously")
-        listen_to_world()
-    else:
-        world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
-        listen_to_world()
+    world_to_slack(test_message)
+    while True:
+        if world:
+            print("World was opened previously")
+            listen_to_world()
+        else:
+            world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
+            listen_to_world()
 
 
 
