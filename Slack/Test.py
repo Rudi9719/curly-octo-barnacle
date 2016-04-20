@@ -66,7 +66,7 @@ def listen_to_world():
     while True:
         i = world.expect([pexpect.TIMEOUT, pexpect.EOF])
         if i == 0:
-            die(child, 'ERROR!\nCommand Timed Out:')
+            die(world, 'ERROR!\nCommand Timed Out:')
         elif i == 1:
             world_to_slack(world.before)
         world.sendline()
