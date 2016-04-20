@@ -80,8 +80,7 @@ def listen_to_world():
             world_to_slack(world.before)
             world.sendline()
         elif i == 2:
-            hello_slack(world.before)
-            hello_world(world.after)
+            world.sendline("\r\r\r")
             world.sendline()
 
         world.sendline()
