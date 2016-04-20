@@ -5,7 +5,7 @@ from subprocess import Popen, PIPE
 from slackclient import SlackClient
 
 
-token = "" #Slack token
+token = "xoxb-10856414337-QWUGUYP12hXrKzGLUe74VeSg" #Slack token
 sc = SlackClient(token)
 test_message = "Command: .a Hello There!! This is my message :] [Player: Rudi (GUID Full: 0x0000000000000001 Type: Player Low: 1) (Account: 1) X: 1887.870483 Y: -4423.166504 Z: 12.811410 Map: 1 (Kalimdor) Area: 1637 (Orgrimmar) Zone: Unknown Selected:  (GUID Full: 0x0000000000000000 Type: None Low: 0)]"
 
@@ -46,12 +46,13 @@ def listen_to_world():
 
 
 def main():
+    sc.connect()
     world_to_slack(test_message)
     if world:
-        print("World was opened")
+        print("World was opened previously")
         listen_to_world()
     else:
-        world = Popen(["/wow/test/bin/worldserver"], stdin=PIPE)
+        world = Popen(["/wow/test/bin/worldserver"])
         listen_to_world()
 
 
