@@ -52,7 +52,6 @@ def slack_to_world(message):
 def world_to_slack(output):
     message = message_strip(output)
     player = re.search('(a-zA-Z)+:', message)
-    message = output
     if (len(message) > 10):
         sc.api_call(
                     "chat.postMessage", channel="#wowserver", text=message,
