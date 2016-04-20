@@ -46,7 +46,7 @@ def listen_to_world():
 
 
 def main():
-    sc.connect()
+    sc.rtm_connect()
     world_to_slack(test_message)
     if world:
         print("World was opened previously")
