@@ -42,7 +42,7 @@ def world_to_slack(output):
 
 def listen_to_world():
     while True:
-        data, error = world.communicate()
+        data, error = world.communicate()[0]
         print(data)
         world_to_slack(data)
 
