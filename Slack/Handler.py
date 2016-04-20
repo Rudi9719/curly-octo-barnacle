@@ -1,6 +1,7 @@
 import os
 import time
 import re
+import sys
 from subprocess import Popen, PIPE
 from slackclient import SlackClient
 
@@ -18,6 +19,7 @@ def main():
     global world
     world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
     time.sleep(13)
+    sys.stdout.flush()
     listen_to_world()
 
 
@@ -53,7 +55,7 @@ def world_to_slack(output):
 def listen_to_world():
     hello_world("Listening to world.")
     while True:
-        data, error = world.stdout.read()
+        data, error = world.stdout.read()[0]
         print(data)
         world_to_slack(data)
         slack_to_world(sc.rtm_read())
