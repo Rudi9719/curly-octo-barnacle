@@ -15,7 +15,8 @@ def main():
     hello_world("Hello, world!")
     start_auth()
     hello_world("Opening world.")
-    global world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
+    global world
+    world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
     listen_to_world()
 
 
