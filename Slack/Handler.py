@@ -48,15 +48,21 @@ def listen_to_world():
         time.sleep(1)
 
 
-
+def hello_world():
+    message = "Hello, world!"
+    sc.api_call(
+            "chat.postMessage", channel="#wowserver", text=message,
+            username='WoW', icon_emoji=':robot_face:'
+            )
 
 
 def main():
     sc.rtm_connect()
+    hello_world()
     start_auth()
-    world_to_slack(test_message)
     while True:
         if world:
+            
             print("World was opened previously")
             listen_to_world()
         else:
