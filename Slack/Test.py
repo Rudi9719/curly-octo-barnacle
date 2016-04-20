@@ -1,4 +1,4 @@
-import os
+import getpass, os, traceback
 import time
 import re
 import sys
@@ -62,10 +62,11 @@ def world_to_slack(output):
 def listen_to_world():
     hello_world("Listening to world.")
     while True:
-        world.expect("\)]")
-        data = world.after()
-        print(data)
-        world_to_slack(data)
+        data = world.expect([pexpect.TIMEOUT, pexpect.EOF])
+        if i == 0:
+            die(child, 'ERROR!\nCommand Timed Out:')
+        elif i == 1:
+            world_to_slack(world.before)
         slack_to_world(sc.rtm_read())
         time.sleep(1)
 
@@ -77,6 +78,11 @@ def hello_world(message):
                 )
 
 
+def die(child, errstr):
+    print errstr
+    print child.before, child.after
+    child.terminate()
+    exit(1)
 
 if __name__ == '__main__':
     main()
