@@ -47,8 +47,8 @@ def slack_to_world(message):
     hello_world(post)
     
     if "\"type\": \"message\"" in post:
-        user = post["username"]
-        message = post["text"]
+        user = re.search("\"username\": \"([a-zA-Z]+)\"",  post)
+        message = re.search("\"texte\": \"(.*)\"",  post)
         post = user + ": " + message
         world.sendline("a " + json.dumps(post) + "\n\r")
         world.sendline()
@@ -77,6 +77,7 @@ def listen_to_world():
         elif i == 1:
             world_to_slack(world.before)
         elif i == 2:
+            hello_world("GUID, and EOF not detected")
             pass
         world.sendline()
         slack_to_world(sc.rtm_read())
