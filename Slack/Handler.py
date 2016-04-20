@@ -17,7 +17,7 @@ def main():
     start_auth()
     hello_world("Opening world.")
     global world
-    world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
+    world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE, shell=True)
     time.sleep(13)
     hello_world("World opened!")
     sys.stdout.flush()
@@ -49,10 +49,11 @@ def slack_to_world(message):
 def world_to_slack(output):
     message = message_strip(output)
     player = re.search('(a-zA-Z)+:', message)
+    message = output
     if (len(message) > 10):
         sc.api_call(
                     "chat.postMessage", channel="#wowserver", text=message,
-                    username=player.group(1), icon_emoji=':robot_face:'
+                    username="WoW", icon_emoji=':robot_face:'
                     )
     else:
         pass
