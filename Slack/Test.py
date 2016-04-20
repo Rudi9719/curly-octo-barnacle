@@ -15,7 +15,7 @@ world = None
 
 def main():
     sc.rtm_connect()
-    hello_world("Hello, world!")
+    hello_world("Slack online.")
     start_auth()
     hello_world("Opening world.")
     global world
@@ -44,7 +44,6 @@ def start_auth():
 
 def slack_to_world(message):
     post = json.dumps(message)
-    hello_world(post)
     
     if "\"type\": \"message\"" in post:
         if "\"subtype\": \"bot_message\"" in post:
@@ -74,7 +73,6 @@ def world_to_slack(output):
 def listen_to_world():
     while True:
         i = world.expect(["GUID", pexpect.EOF, pexpect.TIMEOUT])
-        hello_world("Slack online.")
         if i == 0:
             world_to_slack(world.before)
         elif i == 1:
