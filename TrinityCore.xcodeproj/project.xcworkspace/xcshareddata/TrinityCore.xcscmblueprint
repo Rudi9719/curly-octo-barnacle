@@ -1,15 +1,17 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D0FC8AACE0FE66D9A07060F19C144D3EDFAFAA16",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E26CA9F343870FE7ED1346FE14DA967EB3EFEB2C",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E26CA9F343870FE7ED1346FE14DA967EB3EFEB2C" : 0,
     "D0FC8AACE0FE66D9A07060F19C144D3EDFAFAA16" : 0,
     "DAF0552197E3AB68DCC15C28A891877C0D0E6981" : 0,
     "42A2FEFE10397AB88DD907917A711691927A15EA" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8D4EF4B7-86AA-49A2-87E5-0A273C2E9D9E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E26CA9F343870FE7ED1346FE14DA967EB3EFEB2C" : "curly-octo-barnacle\/",
     "D0FC8AACE0FE66D9A07060F19C144D3EDFAFAA16" : "TrinityCore\/",
     "DAF0552197E3AB68DCC15C28A891877C0D0E6981" : "TrinityCore\/Testing\/SlackRtm\/libwebsockets\/",
     "42A2FEFE10397AB88DD907917A711691927A15EA" : "TrinityCore\/Testing\/SlackRtm\/"
@@ -32,6 +34,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/git.libwebsockets.org\/libwebsockets",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DAF0552197E3AB68DCC15C28A891877C0D0E6981"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Rudi9719\/curly-octo-barnacle.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E26CA9F343870FE7ED1346FE14DA967EB3EFEB2C"
     }
   ]
 }

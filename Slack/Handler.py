@@ -1,11 +1,11 @@
 import os
 import time
 import re
-import subprocess
+from subprocess import Popen, PIPE
 from slackclient import SlackClient
 
 
-world = subprocess.Popen(["/wow/test/bin/worldserver"], stdin=PIPE)
+world = Popen(["/wow/test/bin/worldserver"], stdin=PIPE, shell=True)
 token = "" #Slack token
 #sc = SlackClient(token)
 test_message = "Command: .a Hello There!! This is my message :] [Player: Rudi (GUID Full: 0x0000000000000001 Type: Player Low: 1) (Account: 1) X: 1887.870483 Y: -4423.166504 Z: 12.811410 Map: 1 (Kalimdor) Area: 1637 (Orgrimmar) Zone: Unknown Selected:  (GUID Full: 0x0000000000000000 Type: None Low: 0)]"
@@ -31,9 +31,9 @@ def slack_to_world(message, user):
 
 def world_to_slack(output):
     message = message_strip(output)
-    if (len(message) >  10)
+    if (len(message) > 10):
         sc.rtm_send_message(["#wowserver", message])
-    else
+    else:
         pass
 
 
@@ -46,10 +46,11 @@ def listen_to_world():
 
 def main():
     world_to_slack(test_message)
-    if world
+    if world:
         listen_to_world()
-    else
-        world = subprocess.Popen(["/wow/test/bin/worldserver"], stdin=PIPE)
+    else:
+        world = Popen(["/wow/test/bin/worldserver"], stdin=PIPE)
+        listen_to_world()
 
 
 

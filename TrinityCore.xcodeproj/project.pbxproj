@@ -41,7 +41,7 @@
 		F372B6701C4E9BEC00F4412C /* sql */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sql; sourceTree = "<group>"; };
 		F372B6711C4E9BEC00F4412C /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		F372B6721C4E9BEC00F4412C /* THANKS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = THANKS; sourceTree = "<group>"; };
-		F39C59661CC693C3009F1090 /* Handler.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = Handler.py; path = TrinityCore/Slack/Handler.py; sourceTree = "<group>"; };
+		F39C59661CC693C3009F1090 /* Handler.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = Handler.py; path = Slack/Handler.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
