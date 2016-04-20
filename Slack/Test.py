@@ -46,7 +46,7 @@ def slack_to_world(message):
     post = message
     #post = user + ": " + message
     data = world.sendline("a " + json.dumps(post))
-    listen_to_world()
+
 
 def world_to_slack(output):
     message = message_strip(output)
@@ -62,7 +62,6 @@ def world_to_slack(output):
 
 
 def listen_to_world():
-    hello_world("Listening to world.")
     while True:
         i = world.expect([pexpect.TIMEOUT, pexpect.EOF])
         if i == 0:
