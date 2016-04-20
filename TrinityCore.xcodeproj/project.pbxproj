@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F300846B1CC80D35003D986E /* Test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = Test.py; path = Slack/Test.py; sourceTree = "<group>"; };
 		F31F9B601C683B71008C47F8 /* Testing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Testing; sourceTree = "<group>"; };
 		F31F9B611C683B7A008C47F8 /* SQL Changes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SQL Changes"; sourceTree = "<group>"; };
 		F32B86291C672036006B355D /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				F39C59661CC693C3009F1090 /* Handler.py */,
+				F300846B1CC80D35003D986E /* Test.py */,
 				F32B86291C672036006B355D /* build.sh */,
 				F31F9B611C683B7A008C47F8 /* SQL Changes */,
 				F31F9B601C683B71008C47F8 /* Testing */,
