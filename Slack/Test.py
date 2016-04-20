@@ -96,7 +96,7 @@ def hello_slack(message):
                 )
 
 def hello_world(message):
-    world.sendline("a " + "[Handler]: " + message)
+    world.sendline("a " + "[Handler]: " + str(message))
     world.sendline()
 
 def die(child, errstr):
