@@ -12,14 +12,14 @@ world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
 
 def main():
     sc.rtm_connect()
-    hello_world()
+    hello_world("Hello, world!")
     start_auth()
     while True:
         if world:
-            
-            print("World was opened previously")
+            hello_world("World was previously opened?")
             listen_to_world()
         else:
+            hello_world("Opening world.")
             world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
             listen_to_world()
 
@@ -39,7 +39,7 @@ def start_auth():
 
 def slack_to_world(message, user):
     post = user + ": " + message
-    data, error = world.communicate("a " + post)
+    data, error = world.stdin.write("a " + post)
     listen_to_world()
 
 def world_to_slack(output):
@@ -54,16 +54,16 @@ def world_to_slack(output):
 
 
 def listen_to_world():
+    hello_world("Listening to world.")
     while True:
-        data, error = world.communicate()[0]
+        data, error = world.stdout.read()
         print(data)
         world_to_slack(data)
         print sc.rtm_read()
         time.sleep(1)
 
 
-def hello_world():
-    message = "Hello, world!"
+def hello_world(message):
     sc.api_call(
             "chat.postMessage", channel="#wowserver", text=message,
             username='WoW', icon_emoji=':robot_face:'
