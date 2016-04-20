@@ -46,6 +46,7 @@ def slack_to_world(message):
     post = message
     #post = user + ": " + message
     world.sendline("a " + json.dumps(post) + "\n\r")
+    world.sendline()
 
 
 def world_to_slack(output):
@@ -68,6 +69,7 @@ def listen_to_world():
             die(child, 'ERROR!\nCommand Timed Out:')
         elif i == 1:
             world_to_slack(world.before)
+        world.sendline()
         slack_to_world(sc.rtm_read())
         time.sleep(1)
 
