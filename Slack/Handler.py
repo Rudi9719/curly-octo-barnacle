@@ -14,7 +14,7 @@ def main():
     sc.rtm_connect()
     hello_world("Hello, world!")
     start_auth()
-    while True:
+    while 1:
         if world:
             hello_world("World was previously opened?")
             listen_to_world()
