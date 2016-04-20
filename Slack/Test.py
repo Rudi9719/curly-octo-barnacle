@@ -47,7 +47,7 @@ def slack_to_world(message):
     hello_world(post)
     type = type["type"]
     
-    if type == "message":
+    if "\"type\": \"message\"" in post:
         user = post["username"]
         message = post["text"]
         post = user + ": " + message
