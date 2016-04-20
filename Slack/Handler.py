@@ -17,7 +17,7 @@ def main():
     hello_world("Opening world.")
     global world
     world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
-    sleep(13)
+    time.sleep(13)
     listen_to_world()
 
 
