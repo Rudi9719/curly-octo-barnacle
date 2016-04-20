@@ -59,7 +59,7 @@ def slack_to_world(message):
 
 def world_to_slack(output):
     message = message_strip(output)
-    player = re.search('(a-zA-Z)+:', message)
+    player = re.search('Player: ([a-zA-Z]+)' , output)
     if (len(message) > 10):
         sc.api_call(
                     "chat.postMessage", channel="#wowserver", text=message,
@@ -71,7 +71,7 @@ def world_to_slack(output):
 
 def listen_to_world():
     while True:
-        i = world.expect([pexpect.TIMEOUT, pexpect.EOF])
+        i = world.expect(["GUID", pexpect.EOF])
         if i == 0:
             world_to_slack(world.before)
         elif i == 1:
