@@ -35,9 +35,8 @@ def world_to_slack(output):
                     "chat.postMessage", channel="#wowserver", text=message,
                     username='WoW', icon_emoji=':robot_face:'
                     )
-        listen_to_world()
     else:
-        listen_to_world()
+        pass
 
 
 def listen_to_world():
@@ -45,6 +44,9 @@ def listen_to_world():
         data, error = world.communicate()[0]
         print(data)
         world_to_slack(data)
+    if sc.rtm_connect():
+        print sc.rtm_read()
+        time.sleep(1)
 
 
 
