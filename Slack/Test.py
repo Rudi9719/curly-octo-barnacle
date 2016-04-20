@@ -44,9 +44,9 @@ def start_auth():
 
 def slack_to_world(message):
     post = json.dumps(message)
-    hello_world(message)
-    for i in js:
-        type = js['type']
+    type = json.dumps(json.JSONDecoder().decode(message))
+    type = type["type"]
+    
     if type == "message":
         user = post["username"]
         message = post["text"]
