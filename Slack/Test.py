@@ -80,8 +80,8 @@ def listen_to_world():
             world_to_slack(world.before)
             world.sendline()
         elif i == 2:
-            hello_slack("GUID, and EOF not detected.")
-            hello_world("GUID, and EOF not detected.")
+            hello_slack(world.before)
+            hello_world(world.after)
             world.sendline()
 
         world.sendline()
