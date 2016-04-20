@@ -72,7 +72,7 @@ def world_to_slack(output):
 
 def listen_to_world():
     while True:
-        i = world.expect(["GUID .*", pexpect.EOF, pexpect.TIMEOUT], timeout=3)
+        i = world.expect(["(GUID .*", pexpect.EOF, pexpect.TIMEOUT], timeout=3)
         if i == 0:
             world_to_slack(world.before)
             world.sendline()
