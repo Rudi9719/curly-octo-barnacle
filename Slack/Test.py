@@ -22,6 +22,7 @@ def main():
     world = pexpect.spawn("/wow/test/bin/worldserver")
     world.expect("TC>")
     hello_slack("World opened!")
+    world.sendline()
     sys.stdout.flush()
     listen_to_world()
 
