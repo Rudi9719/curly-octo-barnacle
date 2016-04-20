@@ -62,12 +62,11 @@ def world_to_slack(output):
 def listen_to_world():
     hello_world("Listening to world.")
     while True:
-        world.expect(pexpect.EOF)
-        data = world.before()
+        world.expect(")]")
+        data = world.after()
         print(data)
         world_to_slack(data)
         slack_to_world(sc.rtm_read())
-        world.expect(pexpect.EOF)
         time.sleep(1)
 
 
