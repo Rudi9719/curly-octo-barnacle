@@ -21,7 +21,7 @@ def message_strip(message):
 
 def start_auth():
     os.system("/wow/test/bin/authserver & disown")
-    pass
+
 
 def slack_to_world(message, user):
     post = user + ": " + message
@@ -35,14 +35,16 @@ def world_to_slack(output):
                     "chat.postMessage", channel="#wowserver", text=message,
                     username='WoW', icon_emoji=':robot_face:'
                     )
+        listen_to_world()
     else:
-        pass
+        listen_to_world()
 
 
 def listen_to_world():
-    data, error = world.communicate()
-    print(data)
-    world_to_slack(data)
+    while True:
+        data, error = world.communicate()
+        print(data)
+        world_to_slack(data)
 
 
 
@@ -50,6 +52,7 @@ def listen_to_world():
 
 def main():
     sc.rtm_connect()
+    start_auth()
     
     if world:
         world_to_slack(test_message)
