@@ -8,7 +8,7 @@ from slackclient import SlackClient
 token = "xoxb-10856414337-QWUGUYP12hXrKzGLUe74VeSg" #Slack token
 sc = SlackClient(token)
 test_message = "Command: .a Hello There!! This is my message :] [Player: Rudi (GUID Full: 0x0000000000000001 Type: Player Low: 1) (Account: 1) X: 1887.870483 Y: -4423.166504 Z: 12.811410 Map: 1 (Kalimdor) Area: 1637 (Orgrimmar) Zone: Unknown Selected:  (GUID Full: 0x0000000000000000 Type: None Low: 0)]"
-
+world = Popen(["/wow/test/bin/worldserver"])
 
 def message_strip(message):
     command = message
