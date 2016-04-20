@@ -29,8 +29,10 @@ def message_strip(message):
     command = re.search('Command: .a (.*) \[Player',  command)
     # regex: 'Player: ([a-zA-Z]+)' $1
     player = re.search('Player: ([a-zA-Z]+)' , player)
-    print(player.group(1) + ": " + command.group(1))
-    return player.group(1) + ": " + command.group(1)
+    if player:
+        return player.group(1) + ": " + command.group(1)
+    else:
+        return -1
 
 def start_auth():
     os.system("/wow/test/bin/authserver & disown")
