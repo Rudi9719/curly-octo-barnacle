@@ -43,7 +43,7 @@ def start_auth():
 def slack_to_world(message):
     post = message
     #post = user + ": " + message
-    data = world.sendline("a " + post)
+    data = world.sendline("a ".join(post))
     listen_to_world()
 
 def world_to_slack(output):
