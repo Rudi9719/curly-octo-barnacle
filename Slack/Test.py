@@ -15,13 +15,13 @@ world = None
 
 def main():
     sc.rtm_connect()
-    hello_world("Slack online.")
+    hello_slack("Slack online.")
     start_auth()
-    hello_world("Opening world.")
+    hello_slack("Opening world.")
     global world
     world = pexpect.spawn("/wow/test/bin/worldserver")
     world.expect("TC>")
-    hello_world("World opened!")
+    hello_slack("World opened!")
     sys.stdout.flush()
     listen_to_world()
 
@@ -39,7 +39,7 @@ def message_strip(message):
 
 def start_auth():
     os.system("/wow/test/bin/authserver & disown")
-    hello_world("Auth started.")
+    hello_slack("Auth started.")
 
 
 def slack_to_world(message):
@@ -75,27 +75,34 @@ def listen_to_world():
         i = world.expect(["GUID", pexpect.EOF, pexpect.TIMEOUT])
         if i == 0:
             world_to_slack(world.before)
+            world.sendline()
         elif i == 1:
             world_to_slack(world.before)
+            world.sendline()
         elif i == 2:
-            hello_world("GUID, and EOF not detected")
-            pass
+            hello_slack("GUID, and EOF not detected.")
+            hello_world("GUID, and EOF not detected.")
+            world.sendline()
+
         world.sendline()
         slack_to_world(sc.rtm_read())
         time.sleep(1)
 
 
-def hello_world(message):
+def hello_slack(message):
     sc.api_call(
                 "chat.postMessage", channel="#wowserver", text=message,
                 username='WoW', icon_emoji=':robot_face:'
                 )
 
+def hello_world(message):
+    world.sendline("a " + "[Handler]: " message)
+    world.sendline()
 
 def die(child, errstr):
     print errstr
     print child.before, child.after
-    hello_world(child.before)
+    hello_slack(child.before)
     child.terminate()
     exit(1)
 
