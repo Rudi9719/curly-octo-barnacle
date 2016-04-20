@@ -47,11 +47,14 @@ def slack_to_world(message):
     hello_world(post)
     
     if "\"type\": \"message\"" in post:
-        user = re.search("\"username\": \"([a-zA-Z]+)\"",  post)
-        message = re.search("\"texte\": \"(.*)\"",  post)
-        post = user + ": " + message
-        world.sendline("a " + json.dumps(post) + "\n\r")
-        world.sendline()
+        if "\"subtype\": \"bot_message\"" in post:
+            pass
+        else:
+            user = re.search("\"username\": \"([a-zA-Z]+)\"",  post)
+            message = re.search("\"texte\": \"(.*)\"",  post)
+            post = user.group(1) + ": " + message.group(1)
+            world.sendline("a " + json.dumps(post) + "\n\r")
+            world.sendline()
     else:
         pass
 
