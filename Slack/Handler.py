@@ -50,8 +50,9 @@ def listen_to_world():
 
 def main():
     sc.rtm_connect()
-    world_to_slack(test_message)
+    
     if world:
+        world_to_slack(test_message)
         print("World was opened previously")
         listen_to_world()
     else:
