@@ -62,7 +62,7 @@ def world_to_slack(output):
 def listen_to_world():
     hello_world("Listening to world.")
     while True:
-        world.expect(")]")
+        world.expect("\)]")
         data = world.after()
         print(data)
         world_to_slack(data)
