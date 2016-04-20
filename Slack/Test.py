@@ -70,11 +70,14 @@ def world_to_slack(output):
 
 def listen_to_world():
     while True:
-        i = world.expect(["GUID", pexpect.EOF])
+        i = world.expect(["GUID", pexpect.EOF, pexpect.TIMEOUT])
+        hello_world("Slack online.")
         if i == 0:
             world_to_slack(world.before)
         elif i == 1:
             world_to_slack(world.before)
+        elif i == 2:
+            pass
         world.sendline()
         slack_to_world(sc.rtm_read())
         time.sleep(1)
