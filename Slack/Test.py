@@ -63,7 +63,7 @@ def world_to_slack(output):
     if (len(message) > 10):
         sc.api_call(
                     "chat.postMessage", channel="#wowserver", text=message,
-                    username="WoW", icon_emoji=':robot_face:'
+                    username=player, icon_emoji=':robot_face:'
                     )
     else:
         pass
