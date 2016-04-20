@@ -14,13 +14,9 @@ def main():
     sc.rtm_connect()
     hello_world("Hello, world!")
     start_auth()
-    if world:
-        hello_world("World was previously opened?")
-        listen_to_world()
-    else:
-        hello_world("Opening world.")
-        world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
-        listen_to_world()
+    hello_world("Opening world.")
+    global world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
+    listen_to_world()
 
 
 def message_strip(message):
