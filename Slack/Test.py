@@ -84,6 +84,7 @@ def hello_world(message):
 def die(child, errstr):
     print errstr
     print child.before, child.after
+    hello_world(child.after)
     child.terminate()
     exit(1)
 
