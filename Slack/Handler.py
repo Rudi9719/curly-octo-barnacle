@@ -10,6 +10,20 @@ sc = SlackClient(token)
 test_message = "Command: .a Hello There!! This is my message :] [Player: Rudi (GUID Full: 0x0000000000000001 Type: Player Low: 1) (Account: 1) X: 1887.870483 Y: -4423.166504 Z: 12.811410 Map: 1 (Kalimdor) Area: 1637 (Orgrimmar) Zone: Unknown Selected:  (GUID Full: 0x0000000000000000 Type: None Low: 0)]"
 world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
 
+def main():
+    sc.rtm_connect()
+    hello_world()
+    start_auth()
+    while True:
+        if world:
+            
+            print("World was opened previously")
+            listen_to_world()
+        else:
+            world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
+            listen_to_world()
+
+
 def message_strip(message):
     command = message
     player = message
@@ -54,20 +68,6 @@ def hello_world():
             "chat.postMessage", channel="#wowserver", text=message,
             username='WoW', icon_emoji=':robot_face:'
             )
-
-
-def main():
-    sc.rtm_connect()
-    hello_world()
-    start_auth()
-    while True:
-        if world:
-            
-            print("World was opened previously")
-            listen_to_world()
-        else:
-            world = Popen(["/wow/test/bin/worldserver"], stdout=PIPE)
-            listen_to_world()
 
 
 
