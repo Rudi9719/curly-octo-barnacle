@@ -47,9 +47,9 @@ def slack_to_world(message):
         if "\"subtype\": \"bot_message\"" in post:
             pass
         else:
-            #user = re.search("\"username\": \"([a-zA-Z]+)\"",  post)
+            user = re.search("\"user\": \"([a-zA-Z]+)\"",  post)
             message = re.search("\"text\": \"(.*)\", \"",  post)
-            post = "Slack" + ": " + message.group(1)
+            post = user.group(1) + ": " + message.group(1)
             world.sendline("a " + post + "\n\r")
             world.sendline()
     else:
@@ -62,7 +62,7 @@ def world_to_slack(output):
     if (len(message) > 0):
         sc.api_call(
                     "chat.postMessage", channel="#wowserver", text=message,
-                    username=player.group(1), icon_emoji=':robot_face:'
+                    username=player.group(1), icon_emoji=':trinity-slack:'
                     )
     else:
         pass
@@ -70,7 +70,7 @@ def world_to_slack(output):
 
 def listen_to_world():
     while True:
-        i = world.expect([" \(GUID .*", pexpect.EOF, pexpect.TIMEOUT], timeout=3)
+        i = world.expect([" \(GUID .*", pexpect.EOF, pexpect.TIMEOUT], timeout=1)
         if i == 0:
             world_to_slack(world.before)
             world.sendline()
@@ -96,12 +96,9 @@ def hello_world(message):
     world.sendline("a " + "[Handler]: " + str(message))
     world.sendline()
 
-def die(child, errstr):
-    print errstr
-    print child.before, child.after
-    hello_slack(child.before)
-    child.terminate()
-    exit(1)
+def get_username():
+
+
 
 if __name__ == '__main__':
     main()
