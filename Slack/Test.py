@@ -46,7 +46,7 @@ def slack_to_world(message):
         if "\"subtype\": \"bot_message\"" in post:
             pass
         else:
-            user = re.search('\"user\": \"(a-zA-Z0-9)+\", \"', post)
+            user = re.search('\"user\": \"(.*)\", \"team', post)
             user = get_username(user)
             message = re.search('\"text\": \"(.*)\", \"ts',  post)
             post = user + ": " + message.group(1)
