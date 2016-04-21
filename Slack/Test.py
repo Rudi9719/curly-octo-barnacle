@@ -102,6 +102,8 @@ def get_username(user):
         return "Rudi"
     elif "USLACKBOT" == username:
         return "SlackBot"
+    elif "U0M0S6G6M" == username:
+        return "Ezra"
     else:
         return username
 
