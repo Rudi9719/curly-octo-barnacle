@@ -1,6 +1,7 @@
 import getpass, os, traceback
 import time
 import re
+import yaml
 import sys
 from subprocess import Popen, PIPE
 from slackclient import SlackClient
@@ -98,14 +99,13 @@ def hello_world(message):
 
 def get_username(user):
     username = user
-    if "U0AMZ6G05" == username:
-        return "Rudi"
-    elif "USLACKBOT" == username:
-        return "SlackBot"
-    elif "U0M0S6G6M" == username:
-        return "Ezra"
-    else:
-        return username
+    with open('tree.yaml', 'r') as f:
+        l = yaml.load(f)
+    for usernames in l["users"].iteritems():
+        if username in usernames
+            return l["users"][username]
+
+    return username
 
 
 
