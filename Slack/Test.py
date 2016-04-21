@@ -97,6 +97,7 @@ def hello_world(message):
     world.sendline()
 
 def get_username():
+    pass
 
 
 
