@@ -55,8 +55,9 @@ def slack_to_world(message):
                 world.sendline("a " + post + "\n\r")
                 world.sendline()
             else:
+                user = re.search('\"user\": \"(.*)\", \"team', post)
                 message = re.search('\"text\": \"(.*)\", \"ts',  post)
-                create_account(message.group(1))
+                handle_command(message.group(1), user.group(1))
 
     else:
         pass
@@ -117,6 +118,18 @@ def get_username(user):
             return l["users"][username]
 
     return username
+
+def handle_command(post, user):
+    if is_admin(user):
+        print("Admin user detected.")
+        world.sendline(post)
+    else:
+        username = re.search('([^\s]+)',post)
+        username = username.group(1)
+        create_account(post)
+        hello_slack("Account created, welcome " + username + "!")
+
+
 
 def is_admin(user):
     username = user
