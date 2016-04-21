@@ -33,7 +33,7 @@ def message_strip(message):
     if command:
         return command.group(1)
     else:
-        return "no"
+        return ""
 
 def start_auth():
     os.system("/wow/test/bin/authserver & disown")
