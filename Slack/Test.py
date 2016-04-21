@@ -97,7 +97,7 @@ def hello_world(message):
     world.sendline()
 
 def get_username(user):
-    username = re.search('\"name\": \"(\w)+\"', user)
+    username = user
     if username:
         return username.group(1)
     else:
