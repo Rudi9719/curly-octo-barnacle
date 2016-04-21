@@ -102,7 +102,10 @@ def get_username(user):
     data = sc.rtm_read()
     data = json.dumps(data)
     username = re.search('\"name\": \"(\w)+\"', data)
-    return username.group(1)
+    if username:
+        return username.group(1)
+    else:
+        return "Slack"
 
 
 
