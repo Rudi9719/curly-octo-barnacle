@@ -5,5 +5,8 @@ users:
     U0CS03065: Rudi
     U0JPZF2UT: Ezra
 
-admin:
+admins:
     U0CS03065: Rudi
+
+channels:
+    G0K0U99T7: wowserver

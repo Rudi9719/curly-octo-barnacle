@@ -47,12 +47,17 @@ def slack_to_world(message):
         if "\"subtype\": \"bot_message\"" in post:
             pass
         else:
-            user = re.search('\"user\": \"(.*)\", \"team', post)
-            uname = get_username(user.group(1))
-            message = re.search('\"text\": \"(.*)\", \"ts',  post)
-            post = uname + ": " + message.group(1)
-            world.sendline("a " + post + "\n\r")
-            world.sendline()
+            if "\"channel\": \"G0K0U99T7\"" in post:
+                user = re.search('\"user\": \"(.*)\", \"team', post)
+                uname = get_username(user.group(1))
+                message = re.search('\"text\": \"(.*)\", \"ts',  post)
+                post = uname + ": " + message.group(1)
+                world.sendline("a " + post + "\n\r")
+                world.sendline()
+            else:
+                message = re.search('\"text\": \"(.*)\", \"ts',  post)
+                create_account(message.group(1))
+
     else:
         pass
 
@@ -68,10 +73,15 @@ def world_to_slack(output):
     else:
         pass
 
+def create_account(post):
+    world.sendline("account create " + post)
+    world.sendline()
+    world.sendline()
+
 
 def listen_to_world():
     while True:
-        i = world.expect([" \(GUID .*", pexpect.EOF, pexpect.TIMEOUT], timeout=1)
+        i = world.expect([" \(GUID .*", pexpect.EOF, pexpect.TIMEOUT], timeout=0)
         if i == 0:
             world_to_slack(world.before)
             world.sendline()
@@ -108,6 +118,16 @@ def get_username(user):
 
     return username
 
+def is_admin(user)
+    username = user
+    with open('data.yaml', 'r') as f:
+        l = yaml.load(f)
+    for usernames in l["admins"].iteritems():
+        if username in usernames:
+            return True
+        else:
+            return False
+    return False
 
 
 
