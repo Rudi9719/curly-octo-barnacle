@@ -128,7 +128,7 @@ def handle_command(post, user):
         username = username.group(1)
         create_account(post)
         hello_slack("Account created, welcome " + username + "!")
-
+        hello_world("Account created, welcome " + username + "!")
 
 
 def is_admin(user):
