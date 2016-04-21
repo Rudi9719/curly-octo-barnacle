@@ -99,7 +99,7 @@ def hello_world(message):
 def get_username(user):
     username = user
     if "U0AMZ6G05" == username:
-        return Rudi
+        return "Rudi"
     elif "USLACKBOT" == username:
         return "SlackBot"
     else:
