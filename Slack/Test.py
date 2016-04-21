@@ -59,7 +59,7 @@ def slack_to_world(message):
 def world_to_slack(output):
     message = message_strip(output)
     player = re.search('Player: ([a-zA-Z]+)' , output)
-    if (len(message) > 0):
+    if player:
         sc.api_call(
                     "chat.postMessage", channel="#wowserver", text=message,
                     username=player.group(1), icon_emoji=':trinity-slack:'
