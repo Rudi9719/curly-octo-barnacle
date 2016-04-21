@@ -88,10 +88,11 @@ def listen_to_world():
 
 
 def hello_slack(message):
-    sc.api_call(
-                "chat.postMessage", channel="#wowserver", text=message,
-                username='WoW', icon_emoji=':robot_face:'
-                )
+    #sc.api_call(
+    #            "chat.postMessage", channel="#wowserver", text=message,
+    #            username='WoW', icon_emoji=':robot_face:'
+    #            )
+    pass
 
 def hello_world(message):
     world.sendline("a " + "[Handler]: " + str(message))
@@ -99,7 +100,7 @@ def hello_world(message):
 
 def get_username(user):
     username = user
-    with open('tree.yaml', 'r') as f:
+    with open('data.yaml', 'r') as f:
         l = yaml.load(f)
     for usernames in l["users"].iteritems():
         if username in usernames:
