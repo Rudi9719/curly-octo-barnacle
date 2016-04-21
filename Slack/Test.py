@@ -7,8 +7,8 @@ from slackclient import SlackClient
 import pexpect
 import json
 
-#token = "xoxb-36157182386-AaTzDHepLidA5q4tbUvbpMM1" #sunypolyncs
-token = "xoxb-10856414337-QWUGUYP12hXrKzGLUe74VeSg" #sunypoly
+token = "xoxb-36157182386-AaTzDHepLidA5q4tbUvbpMM1" #sunypolyncs
+#token = "xoxb-10856414337-QWUGUYP12hXrKzGLUe74VeSg" #sunypoly
 sc = SlackClient(token)
 world = None
 
