@@ -98,7 +98,7 @@ def hello_world(message):
     world.sendline()
 
 def get_username(user):
-    print(user)
+    print(user.group(1))
     sc.api_call("user.info", user=user)
     data = sc.rtm_read()
     data = json.dumps(data)
