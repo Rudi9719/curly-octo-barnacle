@@ -102,7 +102,7 @@ def get_username(user):
     with open('tree.yaml', 'r') as f:
         l = yaml.load(f)
     for usernames in l["users"].iteritems():
-        if username in usernames
+        if username in usernames:
             return l["users"][username]
 
     return username
