@@ -97,12 +97,7 @@ def hello_world(message):
     world.sendline()
 
 def get_username(user):
-    print(user.group(1))
-    sc.api_call("user.info", user=user)
-    data = sc.rtm_read()
-    data = json.dumps(data)
-    print(data)
-    username = re.search('\"name\": \"(\w)+\"', data)
+    username = re.search('\"name\": \"(\w)+\"', user)
     if username:
         return username.group(1)
     else:
