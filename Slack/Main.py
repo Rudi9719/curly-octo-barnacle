@@ -118,7 +118,7 @@ def get_username(user):
 
     return username
 
-def is_admin(user)
+def is_admin(user):
     username = user
     with open('data.yaml', 'r') as f:
         l = yaml.load(f)
