@@ -47,9 +47,10 @@ def slack_to_world(message):
         if "\"subtype\": \"bot_message\"" in post:
             pass
         else:
-            user = re.search("\"user\": \"([a-zA-Z]+)\"",  post)
+            user = re.search('\"user\": \"(\w)+\"', post)
+            user = get_username(user)
             message = re.search("\"text\": \"(.*)\", \"",  post)
-            post = user.group(1) + ": " + message.group(1)
+            post = user + ": " + message.group(1)
             world.sendline("a " + post + "\n\r")
             world.sendline()
     else:
@@ -96,8 +97,12 @@ def hello_world(message):
     world.sendline("a " + "[Handler]: " + str(message))
     world.sendline()
 
-def get_username():
-    pass
+def get_username(user):
+    sc.api_call("user.info", user=user)
+    data = sc.rtm_read()
+    data = json.dumps(data)
+    username = re.search('\"name\": \"(\w)+\"', data)
+    return username.group(1)
 
 
 
