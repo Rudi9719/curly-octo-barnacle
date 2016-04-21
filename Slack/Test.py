@@ -48,9 +48,9 @@ def slack_to_world(message):
             pass
         else:
             user = re.search("\"username\": \"([a-zA-Z]+)\"",  post)
-            message = re.search("\"texte\": \"(.*)\"",  post)
+            message = re.search("\"text\": \"(.*)\"",  post)
             post = user.group(1) + ": " + message.group(1)
-            world.sendline("a " + json.dumps(post) + "\n\r")
+            world.sendline("a " + post + "\n\r")
             world.sendline()
     else:
         pass
