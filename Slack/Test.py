@@ -47,9 +47,9 @@ def slack_to_world(message):
             pass
         else:
             user = re.search('\"user\": \"(.*)\", \"team', post)
-            user = get_username(user)
+            uname = get_username(user.group(1))
             message = re.search('\"text\": \"(.*)\", \"ts',  post)
-            post = user + ": " + message.group(1)
+            post = uname + ": " + message.group(1)
             world.sendline("a " + post + "\n\r")
             world.sendline()
     else:
