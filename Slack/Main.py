@@ -76,6 +76,9 @@ def world_to_slack(output):
 
 def create_account(post):
     world.sendline("account create " + post)
+    username = re.search('([^\s]+)',post)
+    username = username.group(1)
+    world.sendline("account set gmlevel " + username + " 1 -1")
     world.sendline()
     world.sendline()
 
