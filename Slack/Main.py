@@ -8,8 +8,9 @@ from slackclient import SlackClient
 import pexpect
 import json
 
-token = "xoxb-36157182386-AaTzDHepLidA5q4tbUvbpMM1" #sunypolyncs
-#token = "xoxb-10856414337-QWUGUYP12hXrKzGLUe74VeSg" #sunypoly
+token = ""
+
+
 sc = SlackClient(token)
 world = None
 
@@ -19,7 +20,7 @@ def main():
     start_auth()
     hello_slack("Opening world.")
     global world
-    world = pexpect.spawn("/wow/3.3.5/bin/worldserver")
+    world = pexpect.spawn("/wow/3.3.5a/bin/worldserver")
     world.expect("TC>")
     hello_slack("World opened!")
     world.sendline()
@@ -36,7 +37,7 @@ def message_strip(message):
         return ""
 
 def start_auth():
-    os.system("/wow/3.3.5/bin/authserver & disown")
+    os.system("/wow/3.3.5a/bin/authserver & disown")
     hello_slack("Auth started.")
 
 
