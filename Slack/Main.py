@@ -19,7 +19,7 @@ def main():
     start_auth()
     hello_slack("Opening world.")
     global world
-    world = pexpect.spawn("/wow/test/bin/worldserver")
+    world = pexpect.spawn("/wow/3.3.5/bin/worldserver")
     world.expect("TC>")
     hello_slack("World opened!")
     world.sendline()
@@ -36,7 +36,7 @@ def message_strip(message):
         return ""
 
 def start_auth():
-    os.system("/wow/test/bin/authserver & disown")
+    os.system("/wow/3.3.5/bin/authserver & disown")
     hello_slack("Auth started.")
 
 
